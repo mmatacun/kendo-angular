@@ -1,4 +1,10 @@
 <nav>
+  <kendo-menu [items]="menuItems" (select)="onSelect($event)">
+    <ng-template kendoMenuItemTemplate let-item="item">
+      {{item.text}}
+    </ng-template>
+  </kendo-menu>
+  <!--
     <a routerLink="/k1-date-picker" class="k-button">KUI/jQuery DatePicker</a>
     <a routerLink="/k1-diagram" class="k-button">KUI/jQuery Diagram</a>
     <a routerLink="/k1-editor" class="k-button">KUI/jQuery Editor</a>
@@ -7,5 +13,6 @@
     <a routerLink="/k1-splitter" class="k-button">KUI/jQuery Splitter</a>
     <a routerLink="/k2-grid" class="k-button">KUI/Angular Grid</a>
     <a routerLink="/k2-slider" class="k-button">KUI/Angular Slider</a>
+    -->
   </nav>
 <router-outlet></router-outlet>

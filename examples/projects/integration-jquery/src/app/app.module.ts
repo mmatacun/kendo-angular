@@ -18,6 +18,8 @@ import { TestSliderComponent } from './test-slider.component';
 import { TestSplitterComponent } from './test-splitter.component';
 
 import '@progress/kendo-ui';
+import { MenuModule } from '@progress/kendo-angular-menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: 'other', component: OtherComponent },
@@ -52,7 +54,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     GridModule,
     InputsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    MenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
